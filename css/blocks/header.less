@@ -1,0 +1,46 @@
+//main: ../style.less
+/*#header {
+  height: 9.6rem;
+  background-color: rgb(0, 0, 0);
+  opacity: 0.388;
+}*/
+.header__top {
+  display: flex;
+  height: 70px;
+  align-items: center;
+}
+.header__contact {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+.header__contact--icon {
+  color: @orange;
+  span {
+    color: @white;
+    margin-left: 0.5rem;
+  }
+}
+.header__social {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__social--link {
+  text-decoration: none;
+  color: @orange;
+  margin-left: 0.7rem;
+  margin-right: 0.7rem;
+  &:first-child {
+    margin-left: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.header__login {
+  padding: 0 0 0 4rem;
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+}
