@@ -1,0 +1,54 @@
+//main: ../style.less
+.find__hotels {
+  /*background: repeating-linear-gradient(
+    45deg,
+    @black,
+    @orange 1px,
+    @orange 1px,
+    @orange 14px
+  );*/
+  background-color: @orange;
+}
+.hotels__content {
+  padding: 5.3rem 0;
+  text-align: center;
+}
+.hotels__title {
+  font-weight: 800;
+  font-size: 2.8rem;
+  color: @black;
+  line-height: 1.44;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+.hotels__colum {
+  display: flex;
+  align-items: center;
+  width: 25%;
+}
+.hotels__row {
+  text-align: left;
+  margin-left: 1rem;
+  &:first-child {
+    margin-left: 0;
+  }
+  label {
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: @black;
+    line-height: 2;
+  }
+  input{
+      font-family: inherit;
+      padding: 0.9rem 0 0.9rem 1.3rem;
+      border-radius: 6px;
+      &:focus{
+          outline: none;
+      }
+  }
+
+}
+.hotels__btn{
+    display: flex;
+    align-items: flex-end;
+}
