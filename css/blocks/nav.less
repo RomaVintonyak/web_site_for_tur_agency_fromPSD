@@ -1,0 +1,37 @@
+//main: ../style.less
+.nav__menu {
+  width: 85%;
+}
+.nav__list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  padding: 0;
+  margin: 0;
+}
+.nav__item {
+  margin: 0 2rem;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.nav__link {
+  text-decoration: none;
+  font-size: 1rem;
+  color: @white;
+  text-transform: uppercase;
+  line-height: 1.677;
+  &::after {
+    content: "";
+    display: block;
+    background-color: @orange;
+    width: 0;
+    height: 3px;
+     transition: width 0.3s linear;
+  }
+  &:hover {
+    &::after {
+      width: 100%;
+    }
+  }
+}
