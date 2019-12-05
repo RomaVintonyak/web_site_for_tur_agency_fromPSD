@@ -1,0 +1,41 @@
+//main: ../style.less
+.services {
+  margin-top: 5rem;
+}
+.services__content {
+  display: flex;
+  margin: 5rem auto 0;
+}
+.services__content--col {
+  width: 50%;
+  padding-right: 4rem;
+  margin-right: 4rem;
+}
+.content__block {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 4rem;
+  transition: padding 0.4s linear, box-shadow 0.4s linear;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &:hover {
+    cursor: pointer;
+    padding: 0.1rem 0.1rem;
+    box-shadow: 0 4px 40px 4px @gray;
+  }
+}
+.block__icon {
+  text-align: left;
+  color: @blue;
+  font-size: 3rem;
+  width: 20%;
+
+}
+.block__text {
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  color: @black;
+  line-height: 1.5;
+  width: 80%;
+}
