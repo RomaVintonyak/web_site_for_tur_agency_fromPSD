@@ -1,0 +1,64 @@
+//main: ../style.less
+.about {
+  display: flex;
+  height: 615px;
+  overflow: hidden;
+}
+.about__left {
+  background: url(../../img/about/bg_left.jpg) no-repeat center;
+  background-size: cover;
+  width: 40%;
+  max-width: 1920px;
+}
+.about__right {
+  background: url(../../img/about/bg_right.jpg) no-repeat center;
+  background-size: cover;
+  width: 60%;
+  max-width: 1920px;
+}
+.right__content {
+  margin: 6.25rem 10rem 0 4.37rem;
+  text-align: left;
+  font-family: "lato", sans-serif;
+}
+.content__title {
+  font-size: 2.8rem;
+  color: @black;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.content__subtitle {
+  font-size: 2.4rem;
+  color: @black;
+  margin-bottom: 2rem;
+}
+.about__text {
+  font-size: 1.3rem;
+  color: @black;
+  line-height: 1.5;
+}
+.right__content--item {
+  margin-top: 3.3rem;
+}
+.about__item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+.about__item--i {
+  color: @blue;
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  transition: transform 0.5s linear;
+  &:hover {
+    transform: translateY(0.5rem);
+    cursor: pointer;
+  }
+}
+.about__item--t {
+  font-size: 1rem;
+  color: @black;
+}
