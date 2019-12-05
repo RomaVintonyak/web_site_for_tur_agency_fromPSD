@@ -1,13 +1,8 @@
 //main: ../style.less
 .find__hotels {
-  /*background: repeating-linear-gradient(
-    45deg,
-    @black,
-    @orange 1px,
-    @orange 1px,
-    @orange 14px
-  );*/
-  background-color: @orange;
+  background: url(../../img/hotels/hotels_bg.png)no-repeat center;
+  background-size: cover;
+  overflow: hidden;
 }
 .hotels__content {
   padding: 5.3rem 0;
@@ -24,11 +19,11 @@
 .hotels__colum {
   display: flex;
   align-items: center;
-  width: 25%;
 }
 .hotels__row {
   text-align: left;
   margin-left: 1rem;
+  width: 16%;
   &:first-child {
     margin-left: 0;
   }
@@ -38,17 +33,12 @@
     color: @black;
     line-height: 2;
   }
-  input{
-      font-family: inherit;
-      padding: 0.9rem 0 0.9rem 1.3rem;
-      border-radius: 6px;
-      &:focus{
-          outline: none;
-      }
+  input {
+    font-family: inherit;
+    padding: 0.9rem 0 0.9rem 1.3rem;
+    border-radius: 6px;
+    &:focus {
+      outline: none;
+    }
   }
-
-}
-.hotels__btn{
-    display: flex;
-    align-items: flex-end;
 }
