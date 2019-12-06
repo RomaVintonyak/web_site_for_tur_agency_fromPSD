@@ -1,0 +1,100 @@
+//main: ../style.less
+.tour__content {
+  display: flex;
+  margin: 6rem 0;
+}
+.tour__col {
+  &--l {
+    width: 35%;
+  }
+  &--r {
+    width: 65%;
+    padding-left: 6rem;
+  }
+}
+.tour__progres {
+  margin-top: 3rem;
+  display: flex;
+  width: 100%;
+  height: 6rem;
+  border: 2px solid @blue;
+}
+.flight {
+  width: 33.33333%;
+  padding: 2rem 0 2rem 2rem;
+  background-color: @blue;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: -78px;
+    top: 0px;
+    border: 43px solid transparent;
+    border-left: 37px solid @blue;
+  }
+  i {
+    color: @white;
+    font-size: 2rem;
+  }
+  span {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: @white;
+    margin-left: 0.5rem;
+  }
+}
+.car {
+  width: 33.33333%;
+  padding: 2rem 0 2rem 4rem;
+  background-color: #e4e4e4;
+  display: flex;
+  align-items: center;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    right: -77px;
+    top: 0px;
+    border: 43px solid transparent;
+    border-left: 37px solid #e4e4e4;
+  }
+  i {
+    color: @black;
+    font-size: 2rem;
+  }
+  span {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: @black;
+    margin-left: 0.5rem;
+  }
+}
+.hotel {
+  width: 33.33333%;
+  padding: 2rem 0 2rem 4rem;
+  background-color: @white;
+  display: flex;
+  align-items: center;
+  i {
+    color: @black;
+    font-size: 2rem;
+  }
+  span {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: @black;
+    margin-left: 0.5rem;
+  }
+}
+.tour__text {
+  padding-right: 3rem;
+  font-family: 'lato', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: @black;
+  /*margin-bottom: 4rem;*/
+}
