@@ -1,7 +1,58 @@
 //main: ../style.less
-.reviews{
-    background: url(../../img/reviews/bg.jpg)no-repeat center;
-    height: 590px;
-    overflow: hidden;
-    background-size: cover;
+.reviews {
+  background: url(../../img/reviews/bg.jpg) no-repeat center;
+  height: 590px;
+  overflow: hidden;
+  background-size: cover;
+}
+.reviews__content {
+  margin: 4rem 0;
+}
+.reviews__text {
+  font-family: "lato", sans-serif;
+  font-size: 1.8rem;
+  color: @white;
+  font-weight: 300;
+  font-style: italic;
+}
+.reviews__stars {
+  font-size: 1.5rem;
+  color: @orange;
+  margin-top: 2rem;
+  i {
+    margin-left: 1rem;
+    transition: transform 0.6s linear;
+    &:first-child {
+      margin-left: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      transform: translateY(-10px);
+    }
+  }
+}
+.reviews__footer {
+  margin-top: 4rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  img {
+    width: 69px;
+    height: auto;
+  }
+}
+.reviews__footer-text {
+  margin-left: 2rem;
+  p {
+    font-weight: 900;
+    font-size: 1.7rem;
+    color: @white;
+    margin-bottom: 0.3rem;
+  }
+  span {
+    font-size: 1.3rem;
+    color: @white;
+    font-weight: 400;
+  }
 }
