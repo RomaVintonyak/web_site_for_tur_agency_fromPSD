@@ -1,12 +1,15 @@
 //main: ../style.less
 .find__hotels {
-  background: url(../../img/hotels/hotels_bg.png)no-repeat center;
+  background: url(../../img/hotels/hotels_bg.png) no-repeat center;
   background-size: cover;
   overflow: hidden;
 }
 .hotels__content {
   padding: 5.3rem 0;
   text-align: center;
+  @media @notebook {
+    padding: 0.5rem 0;
+  }
 }
 .hotels__title {
   font-weight: 800;
@@ -15,15 +18,38 @@
   line-height: 1.44;
   text-transform: uppercase;
   margin-bottom: 2rem;
+  @media @tablet {
+    margin-bottom: 0.5rem;
+  }
+  @media @mobile-sm {
+    margin-bottom: 0.2rem;
+  }
 }
 .hotels__colum {
   display: flex;
   align-items: center;
+  @media @notebook {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 1rem;
+  }
 }
 .hotels__row {
+  display: flex;
+  flex-direction: column;
   text-align: left;
   margin-left: 1rem;
   width: 16%;
+  @media @notebook {
+    width: 20%;
+  }
+  @media @notebook {
+    width: 25%;
+  }
+  @media @mobile {
+    width: 80%;
+    margin-left: 0;
+  }
   &:first-child {
     margin-left: 0;
   }
