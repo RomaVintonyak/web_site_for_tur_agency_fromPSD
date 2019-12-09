@@ -1,0 +1,76 @@
+//main: ../style.less
+.footer__location {
+  font-size: 8rem;
+  color: @orange;
+  margin-top: -8rem;
+}
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+.footer__content-colum {
+  display: flex;
+  align-items: center;
+  i {
+    font-size: 3rem;
+  }
+}
+.colum__text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  p {
+    color: @black;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.footer__social {
+  margin-top: 6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  i {
+    color: @gray;
+    font-size: 1.5rem;
+    padding: 1.5rem 1.5rem;
+    border: 2px solid @orange;
+    border-radius: 50%;
+    margin-right: 2rem;
+    transition: background-color 0.6s linear, color 0.6s linear,
+      transform 0.6s linear;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      cursor: pointer;
+      background-color: @gray;
+      color: @white;
+      transform: translateY(-5px);
+    }
+  }
+}
+.footer__copyright {
+  margin-top: 6rem;
+  height: 12rem;
+  background-color: @orange;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  h6 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: @black;
+    margin-bottom: 0.5rem;
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: @black;
+  }
+}
