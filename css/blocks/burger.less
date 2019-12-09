@@ -1,0 +1,47 @@
+//main: ../style.less
+.burger__button {
+    display: none;
+    @media @tablet{
+        display: block
+      }
+ &:hover {
+    cursor: pointer;
+  }
+  button {
+    background-color: transparent;
+    border: none;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.burger__icon {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #6c7282;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #6c7282;
+    position: absolute;
+    top: -8px;
+    left: 0;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 3px;
+    background-color: #6c7282;
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    z-index: 1;
+  }
+}
