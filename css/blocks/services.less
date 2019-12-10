@@ -4,12 +4,28 @@
 }
 .services__content {
   display: flex;
-  margin: 5rem auto 0;
+  margin: 5rem 0 0;
+  @media @mobile {
+    flex-wrap: wrap;
+  }
 }
 .services__content--col {
   width: 50%;
   padding-right: 4rem;
   margin-right: 4rem;
+  @media @notebook {
+    text-align: center;
+    margin-right: 0;
+    margin-left: 4rem;
+  }
+  @media @mobile {
+    width: 100%;
+    margin: 0 1rem 4rem 1rem;
+    padding: 0;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 .content__block {
   display: flex;
