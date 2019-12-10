@@ -6,9 +6,20 @@
   height: 760px;
   background-size: cover;
   overflow: hidden;
+  @media @tablet{
+    height: 1100px;
+  }
+ @media @mobile{
+   height: 1400px;
+ }
 }
 .package__card {
   display: flex;
+  @media @tablet{
+    margin-top: 1rem!important;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .card__content {
   width: 30%;
@@ -18,9 +29,23 @@
   text-align: center;
   margin: 0 2rem;
   transition: box-shadow 0.4s linear, transform 0.4s linear;
+  @media @tablet{
+    width: 46%;
+    margin: 0 1rem 1rem;
+    }
+    @media @mobile{
+      width: 100%;
+    }
+    @media @mobile-sm{
+     height: 350px;
+    }
   &--img i {
     font-size: 5rem;
     margin-top: 2rem;
+    @media @mobile-sm{
+      font-size: 3rem;
+      margin-top: 1rem;
+    }
   }
   &--img p {
     font-size: 1.7rem;
@@ -38,6 +63,11 @@
     box-shadow: 0 4px 40px 4px @white;
     cursor: pointer;
     transform: translateY(-15px);
+  }
+}
+.card__content--text{
+  @media @mobile-sm{
+    margin-top: 1.5rem!important;
   }
 }
 .text__item {
