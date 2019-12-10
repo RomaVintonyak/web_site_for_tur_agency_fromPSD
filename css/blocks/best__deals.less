@@ -5,11 +5,24 @@
   overflow: hidden;
   width: 100%;
   height: 930px;
+  @media @tablet {
+    height: 1450px;
+  }
+  @media @mobile {
+    height: 1850px;
+  }
 }
 .deals__content {
   width: 100%;
   display: flex;
   margin-top: 3rem;
+  @media @tablet {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media @mobile {
+    margin-top: 1rem;
+  }
 }
 .deals__card {
   width: 33.33333%;
@@ -17,6 +30,22 @@
   background-color: @white;
   border-radius: 10px;
   transition: box-shadow 0.4s linear, transform 0.4s linear;
+  @media @tablet {
+    width: 46%;
+    margin: 0 0.5rem;
+    margin-bottom: 1rem;
+  }
+  @media @mobile {
+    width: 75%;
+    margin: 0 1.5rem;
+    margin-bottom: 1rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  @media @mobile-sm{
+    height: 550px;
+  }
   &:hover {
     box-shadow: 0 4px 40px 4px @white;
     cursor: pointer;
@@ -36,17 +65,23 @@
     border-left-color: rgba(128, 128, 128, 0.767);
     box-shadow: 0 0px 25px rgba(128, 128, 128, 0.767);
     position: relative;
+    @media @tablet {
+      margin-top: 0;
+      height: 565px;
+    }
     &::after {
       content: "";
       position: absolute;
       z-index: 1;
       right: 0px;
-
       bottom: -260px;
       border: 198px solid transparent;
       border-bottom: 65px solid @white;
       transform: rotate(180deg);
       border-radius: 5px;
+      @media @notebook {
+        display: none;
+      }
     }
     &:hover {
       -webkit-transform: scale(1.1);
@@ -61,31 +96,45 @@
   height: 280px;
   width: 100%;
   display: block;
+  @media @mobile-sm {
+    height: 240px;
+  }
 }
 .deals__text {
   padding: 1rem 3.7rem;
   text-align: center;
   color: @black;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  p {
+    padding: 0;
+  }
+  @media @mobile-sm{
+    padding: 0.6rem 1.6rem;
+    margin-bottom: 0.2rem;
+  }
 }
 .deals__subtitle {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   font-weight: 400;
+  @media @notebook {
+    font-size: 1.5rem;
+  }
 }
 .deals__title {
   font-size: 2rem;
   font-weight: 700;
   margin-bottom: 0.5rem;
-}
-.deals__text {
-  p {
-    padding: 0;
+  @media @notebook {
+    font-size: 1.5rem;
   }
-  font-weight: 500;
-  font-size: 1rem;
-  margin-bottom: 1rem;
 }
 .deals__price {
   font-size: 2rem;
   font-weight: 900;
+  @media @notebook {
+    font-size: 1.5rem;
+  }
 }

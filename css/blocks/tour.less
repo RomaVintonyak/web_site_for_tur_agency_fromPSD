@@ -2,14 +2,25 @@
 .tour__content {
   display: flex;
   margin: 6rem 0;
+  @media @tablet {
+    flex-wrap: wrap;
+    margin: 4rem 0;
+  }
 }
 .tour__col {
   &--l {
     width: 35%;
+    @media @tablet {
+      display: none;
+    }
   }
   &--r {
     width: 65%;
     padding-left: 6rem;
+    @media @tablet {
+      width: 100%;
+      padding-left: 0;
+    }
   }
 }
 .tour__progres {
@@ -26,6 +37,9 @@
   display: flex;
   align-items: center;
   position: relative;
+  @media @mobile-sm{
+    padding: 2rem 0 2rem 0.4rem;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -38,12 +52,18 @@
   i {
     color: @white;
     font-size: 2rem;
+    @media @mobile-sm {
+      font-size: 1.2rem;
+    }
   }
   span {
     font-size: 1.7rem;
     font-weight: 500;
     color: @white;
     margin-left: 0.5rem;
+    @media @mobile-sm {
+      font-size: 1rem;
+    }
   }
 }
 .car {
@@ -53,6 +73,9 @@
   display: flex;
   align-items: center;
   position: relative;
+  @media @mobile-sm{
+    padding: 2rem 0 2rem 2.6rem;
+  }
   &::after {
     content: "";
     position: absolute;
@@ -65,12 +88,18 @@
   i {
     color: @black;
     font-size: 2rem;
+    @media @mobile-sm {
+      font-size: 1.2rem;
+    }
   }
   span {
     font-size: 1.7rem;
     font-weight: 500;
     color: @black;
     margin-left: 0.5rem;
+    @media @mobile-sm {
+      font-size: 1rem;
+    }
   }
 }
 .hotel {
@@ -79,20 +108,29 @@
   background-color: @white;
   display: flex;
   align-items: center;
+  @media @mobile-sm{
+    padding: 2rem 0 2rem 2rem;
+  }
   i {
     color: @black;
     font-size: 2rem;
+    @media @mobile-sm {
+      font-size: 1.2rem;
+    }
   }
   span {
     font-size: 1.7rem;
     font-weight: 500;
     color: @black;
     margin-left: 0.5rem;
+    @media @mobile-sm {
+      font-size: 1rem;
+    }
   }
 }
 .tour__text {
   padding-right: 3rem;
-  font-family: 'lato', sans-serif;
+  font-family: "lato", sans-serif;
   font-size: 1.2rem;
   line-height: 1.5;
   color: @black;
