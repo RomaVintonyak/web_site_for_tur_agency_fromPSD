@@ -5,6 +5,8 @@ $(function() {
   var nav__list = $(".nav__list");
   var nav__item = $(".nav__item");
   var navToogle = $("#toglerButton");
+  /*slick slider*/
+  const workSlider = $('[data-slider="slick"]');
   /*togler class click to burger button */
   $("#toglerButton").on("click", function(event) {
     event.preventDefault();
@@ -75,4 +77,13 @@ $(function() {
     nav__list.toggleClass("show");
     nav__item.toggleClass("show");
   });
+    /*Slick slider https://kenwheeler.github.io/slick */
+    workSlider.slick({
+      infinite: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true,
+      arrows: false,
+      dots: true
+    });
 });

@@ -103,7 +103,9 @@
                 >
               </li>
               <li class="nav__item">
-                <a class="nav__link" data-scroll="#best__deals" href="#">About</a>
+                <a class="nav__link" data-scroll="#best__deals" href="#"
+                  >About</a
+                >
               </li>
               <li class="nav__item">
                 <a class="nav__link" data-scroll="#blog" href="#">Blog</a>
@@ -382,7 +384,17 @@
       <div class="container">
         <div class="tour__content">
           <div class="tour__col tour__col--l">
-            <img src="img/tour/left_bg.jpg" alt="nature" class="img" />
+            <div data-slider="slick">
+              <div class="slick__img">
+                <img src="img/tour/left_bg.jpg" alt="nature" class="img" />
+              </div>
+              <div class="slick__img">
+                <img src="https://placehold.it/418x546/9c9c9c"  class="img"/>
+              </div>
+              <div class="slick__img">
+                  <img src="https://placehold.it/418x546/acb698"  class="img"/>
+              </div>
+            </div>
           </div>
           <div class="tour__col tour__col--r">
             <div class="headers text__left">
@@ -673,6 +685,8 @@
     </div>
     <!--jquery library-->
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!--slick slider  https://kenwheeler.github.io/slick/-->
+    <script type="text/javascript" src="js/slick.min.js"></script>
     <!--main script-->
     <script type="text/javascript" src="js/main.js"></script>
   </body>
