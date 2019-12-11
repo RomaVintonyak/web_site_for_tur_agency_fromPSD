@@ -1,4 +1,10 @@
 $(function() {
+  /*global variables*/
+  /*Nav Toggle (show burger menu)*/
+  var nav = $(".nav__menu");
+  var nav__list = $(".nav__list");
+  var nav__item = $(".nav__item");
+  var navToogle = $("#toglerButton");
   /*togler class click to burger button */
   $("#toglerButton").on("click", function(event) {
     event.preventDefault();
@@ -30,7 +36,8 @@ $(function() {
     event.preventDefault();
     var blockId = $(this).data("scroll");
     var blockOffset = $(blockId).offset().top;
-    /*nav.removeClass("show"); */
+    nav.removeClass("show");
+    nav__list.removeClass("show");
     $("html, body").animate(
       {
         scrollTop: blockOffset - 70
@@ -60,5 +67,12 @@ $(function() {
     event.preventDefault();
     $(this).toggleClass("active");
     $(".nav__link a").toggleClass("active");
+  });
+  /*Nav Toggle (show burger menu)*/
+  navToogle.on("click", function(event) {
+    event.preventDefault();
+    nav.toggleClass("show");
+    nav__list.toggleClass("show");
+    nav__item.toggleClass("show");
   });
 });

@@ -1,8 +1,11 @@
 //main: ../style.less
 .nav__menu {
   width: 85%;
-  @media @tablet{
+  @media @tablet {
     display: none;
+  }
+  &.show {
+    display: inline-block;
   }
 }
 .nav__list {
@@ -11,9 +14,22 @@
   justify-content: flex-end;
   padding: 0;
   margin: 0;
+  &.show {
+    position: absolute;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    flex-direction: column;
+    margin-top: 29px;
+    background-color: rgba(#9c9c9c, 0.9);
+  }
 }
 .nav__item {
   margin: 0 2rem;
+  &.show{
+    display: flex;
+    justify-content: flex-end;
+  }
   &:first-child {
     margin-left: 0;
   }
@@ -24,7 +40,7 @@
   color: @white;
   text-transform: uppercase;
   line-height: 1.677;
-  &.active{
+  &.active {
     color: @orange;
   }
   &::after {
@@ -33,7 +49,7 @@
     background-color: @orange;
     width: 0;
     height: 3px;
-     transition: width 0.3s linear;
+    transition: width 0.3s linear;
   }
   &:hover {
     &::after {
