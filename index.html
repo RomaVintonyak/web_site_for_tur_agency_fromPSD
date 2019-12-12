@@ -125,7 +125,7 @@
     </header>
     <!--/.header-->
     <!--intro section-->
-    <section class="intro" id="intro">
+    <section class="intro wow zoomIn" id="intro" data-wow-duration="1s"  data-wow-delay="1s">
       <div class="container">
         <div class="intro__content">
           <h1 class="intro__title">Start Your Greatest</h1>
@@ -141,7 +141,7 @@
     </section>
     <!--/.intro section-->
     <!--find hote-->
-    <section class="find__hotels" id="hotels">
+    <section class="find__hotels wow jello" id="hotels" data-wow-duration="1s"  data-wow-delay="1s">
       <div class="container">
         <div class="hotels__content">
           <h3 class="hotels__title">Find Hotels</h3>
@@ -174,8 +174,8 @@
     <!--/.find__hotels-->
     <!--about section-->
     <section class="about" id="about">
-      <div class="about__left"></div>
-      <div class="about__right img">
+      <div class="about__left wow bounceInLeft" data-wow-offset="1"  data-wow-iteration="2"></div>
+      <div class="about__right img wow bounceInRight" data-wow-duration="2s"  data-wow-delay="1s">
         <div class="container">
           <div class="right__content">
             <h3 class="content__title">Thrusted Since 2011</h3>
@@ -215,7 +215,7 @@
     </section>
     <!--/.about section-->
     <!--services section-->
-    <section class="services" id="services">
+    <section class="services wow zoomIn" data-wow-delay="1s" data-wow-duration="2s" id="services">
       <div class="container">
         <div class="headers">
           <h3 class="headers__title">Our Best Services</h3>
@@ -293,7 +293,7 @@
     </section>
     <!--/.service section-->
     <!--section Budget Package-->
-    <section id="package" class="package">
+    <section id="package" class="package wow jackInTheBox" data-wow-delay="1s" data-wow-duration="2s">
       <div class="container">
         <div class="headers mt-6">
           <h3 class="headers__title">Thrusted Since 2011</h3>
@@ -380,7 +380,7 @@
     </section>
     <!--/.section budget package-->
     <!--tour status section-->
-    <section class="tour" id="tour">
+    <section class="tour wow fadeInRight" id="tour" data-wow-delay="1s" data-wow-duration="2s">
       <div class="container">
         <div class="tour__content">
           <div class="tour__col tour__col--l">
@@ -389,10 +389,10 @@
                 <img src="img/tour/left_bg.jpg" alt="nature" class="img" />
               </div>
               <div class="slick__img">
-                <img src="https://placehold.it/418x546/9c9c9c"  class="img"/>
+                <img src="https://placehold.it/418x546/9c9c9c" class="img" />
               </div>
               <div class="slick__img">
-                  <img src="https://placehold.it/418x546/acb698"  class="img"/>
+                <img src="https://placehold.it/418x546/acb698" class="img" />
               </div>
             </div>
           </div>
@@ -432,7 +432,7 @@
     </section>
     <!--/.tour section-->
     <!--best deals section-->
-    <section id="best__deals" class="deals">
+    <section id="best__deals" class="deals wow fadeInLeft" data-wow-delay="1s" data-wow-duration="2s">
       <div class="container">
         <div class="headers mt-5">
           <h3 class="headers__title">Pack and Go</h3>
@@ -498,7 +498,7 @@
     </section>
     <!--/.best deals-->
     <!--blog section-->
-    <section id="blog" class="blog">
+    <section id="blog" class="blog wow fadeInRight" data-wow-delay="1s" data-wow-duration="2s">
       <div class="container">
         <div class="headers mt-6">
           <h3 class="headers__title">Thrusted Since 2011</h3>
@@ -564,7 +564,7 @@
     </section>
     <!--/.blog section-->
     <!--slide section-->
-    <section class="slide" id="slide">
+    <section class="slide wow pulse" id="slide" data-wow-delay="1s" data-wow-duration="2s">
       <div class="container">
         <div class="slide__content">
           <div class="slide__colum slide__colum--l">
@@ -603,7 +603,7 @@
     </section>
     <!--/.slide section-->
     <!--reviews section-->
-    <section class="reviews" id="reviews">
+    <section class="reviews wow flash" id="reviews" data-wow-delay="1s" data-wow-duration="2s">
       <div class="container">
         <div class="headers mt-6">
           <h3 class="headers__title white">Customer Reviews</h3>
@@ -638,10 +638,10 @@
     <footer class="footer" id="footer">
       <img class="img" src="img/footer/footer_bg.png" alt="mountains" />
       <div class="container">
-        <div class="footer__location text__center">
+        <div class="footer__location text__center wow zoomIn">
           <i class="fas fa-map-marker-alt"></i>
         </div>
-        <div class="footer__content">
+        <div class="footer__content wow rollIn">
           <div class="footer__content-colum">
             <i class="fas fa-envelope"></i>
             <div class="colum__text">
@@ -665,7 +665,7 @@
             </div>
           </div>
         </div>
-        <div class="footer__social">
+        <div class="footer__social wow rollOut">
           <i class="fab fa-facebook-f"></i>
           <i class="fab fa-google"></i>
           <i class="fab fa-vk"></i>
@@ -675,9 +675,15 @@
           <i class="fab fa-dribbble"></i>
         </div>
       </div>
-      <div class="footer__copyright text__center">
+      <div class="footer__copyright text__center wow jackInTheBox">
         <h6>Designed by Roman Vintonyak FrontEnd Developer</h6>
-        <p>Copyright &copy;2020 All Rights Reserved</p>
+        <p>
+          Copyright &copy;2019 -
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          All Rights Reserved
+        </p>
       </div>
     </footer>
     <div class="back__to--top">
@@ -687,6 +693,9 @@
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <!--slick slider  https://kenwheeler.github.io/slick/-->
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <!--https://www.delac.io/wow/docs.html wow js animation-->
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script type="text/javascript">new WOW().init();</script>
     <!--main script-->
     <script type="text/javascript" src="js/main.js"></script>
   </body>
